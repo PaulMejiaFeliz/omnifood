@@ -45,6 +45,5 @@ $(document).ready(function () {
 
 
         icon.attr('name', icon.attr('name') == 'menu' ? 'close' : 'menu')
-
     })
 });
