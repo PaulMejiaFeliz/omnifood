@@ -22,6 +22,7 @@ body {
     font-weight: 300;
     text-rendering: optimizeLegibility;
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
 .clearfix {
@@ -257,7 +258,7 @@ header {
     border-bottom: 2px solid #e67e22;
 }
 
-/*    main nav    */
+/*    sticky nav    */
 
 .sticky-nav {
     position: fixed;
@@ -285,6 +286,20 @@ header {
 
 .sticky-nav .main-nav {
     margin-top: 17px;
+}
+
+/*      mobile nav      */
+
+.mobile-nav-icon {
+    float: right;
+    display: none;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+.mobile-nav-icon ion-icon {
+    font-size: 200%;
+    color: #fff;
 }
 
 /* --------------------------------------------- */
@@ -606,4 +621,25 @@ footer p {
     text-align: center;
     font-size: 90%;
     margin-top: 20px;
+}
+
+/* --------------------------------------------- */
+/*                Animations                     */
+/* --------------------------------------------- */
+
+.js--features-wp,
+.js--steps-wp,
+.js--cities-wp {
+    opacity: 0;
+    animation-duration: 1s;
+}
+
+.js--plans-wp {
+    animation-duration: 1s;
+}
+
+.js--features-wp.animated,
+.js--steps-wp.animated,
+.js--cities-wp.animated {
+    opacity: 1;
 }
