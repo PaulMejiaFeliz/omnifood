@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Omnifood</title>
+    <link href="vendor/css/animate.css" rel="stylesheet">
     <link href="vendor/css/normalize.css" rel="stylesheet">
     <link href="vendor/css/grid.css" rel="stylesheet">
     <link href="resources/css/style.css" rel="stylesheet">
@@ -18,28 +19,31 @@
             <div class="row">
                 <img src="resources/images/logo-white.png" alt="Omnifood logo" class="logo">
                 <img src="resources/images/logo.png" alt="Omnifood logo" class="logo-black">
-                <ul class="main-nav">
-                    <li><a href="#">Food delivery</a></li>
-                    <li><a href="#">How it works</a></li>
-                    <li><a href="#">Our cities</a></li>
-                    <li><a href="#">Sign up</a></li>
+                <ul class="main-nav js--main-nav">
+                    <li><a href="#features">Food delivery</a></li>
+                    <li><a href="#works">How it works</a></li>
+                    <li><a href="#cities">Our cities</a></li>
+                    <li><a href="#plans">Sign up</a></li>
                 </ul>
+                <a class="mobile-nav-icon js--nav-icon">
+                    <ion-icon name="menu"></ion-icon>
+                </a>
             </div>
         </nav>
         <div class="hero-text-box">
             <h1>Goodbye junk food<br>Hello super healthy meals</h1>
-            <a class="btn btn-solid" href="#">I’m hungry</a>
-            <a class="btn btn-transparent" href="#">Show me more</a>
+            <a class="btn btn-solid" href="#plans">I’m hungry</a>
+            <a class="btn btn-transparent" href="#features">Show me more</a>
         </div>
     </header>
-    <section class="features-section js--features-section">
+    <section class="features-section js--features-section" id="features">
         <div class="row">
             <h2>Get food fast &mdash; not fast food.</h2>
             <p class="long-copy">
                 Hello, we’re Omnifood, your new premium food delivery service. We know you’re always busy. No time for cooking. So let us take care of that, we’re really good at it, we promise!
             </p>
         </div>
-        <div class="row">
+        <div class="row js--features-wp">
             <div class="col span-1-of-4 box">
                 <div class="box-title">
                     <ion-icon name="infinite-outline" class="big-icon"></ion-icon>
@@ -124,13 +128,13 @@
             </li>
         </ul>
     </section>
-    <section class="steps-section">
+    <section class="steps-section" id="works">
         <div class="row">
             <h2>How it works &mdash; Simple as 1, 2, 3</h2>
         </div>
         <div class="row">
             <div class="col span-1-of-2 steps-box">
-                <img src="resources/images/app-iPhone.png" alt="Omnifood app on iPhone" class="app-screen">
+                <img src="resources/images/app-iPhone.png" alt="Omnifood app on iPhone" class="app-screen js--steps-wp">
             </div>
             <div class="col span-1-of-2 steps-box">
                 <div class="works-step">
@@ -150,11 +154,11 @@
             </div>
         </div>
     </section>
-    <section class="cities-section">
+    <section class="cities-section" id="cities">
         <div class="row">
             <h2>We're currently in these cities</h2>
         </div>
-        <div class="row">
+        <div class="row js--cities-wp">
             <div class="col span-1-of-4 box">
                 <img src="resources/images/lisbon-3.jpg" alt="Lisbon" class="city-photo">
                 <h3>Lisbon</h3>
@@ -246,13 +250,13 @@
             </div>
         </div>
     </section>
-    <section class="plans-section">
+    <section class="plans-section" id="plans">
         <div class="row">
             <h2>Start eating healthy today</h2>
         </div>
         <div class="row">
             <div class="col span-1-of-3">
-                <div class="plan-box">
+                <div class="plan-box js--plans-wp">
                     <div>
                         <h3>Premium</h3>
                         <p class="plan-price">399$ <span>/ month</span></p>
